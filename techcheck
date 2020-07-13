@@ -1,0 +1,698 @@
+set cut_paste_input [stack 0]
+version 12.0 v3
+BackdropNode {
+ inputs 0
+ name BackdropNode15
+ tile_color 0x516d8eff
+ label "Tech Check"
+ note_font "Verdana Bold Italic"
+ note_font_size 200
+ selected true
+ xpos -1341
+ ypos 5413
+ bdwidth 3324
+ bdheight 4826
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode16
+ tile_color 0xaaaaaa00
+ label "7)  \nCheck your edges\nDoes your defocus match with the plate?\nHave you brought back hair details"
+ note_font "DejaVu Sans"
+ note_font_size 32
+ selected true
+ xpos -1188
+ ypos 9607
+ bdwidth 950
+ bdheight 240
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode17
+ tile_color 0xaaaaaa00
+ label "4) Check saturation\n\nDoes anything stand out?\n\n-EXAMPLE-\nYou can see in this image there's probably still to much green spill \naround the bottom of the window\n\nDo you have multiple smoke elements\nthat are all different colours? That should be the same\n\n"
+ note_font_size 32
+ selected true
+ xpos -1311
+ ypos 7421
+ bdwidth 1305
+ bdheight 401
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode18
+ tile_color 0x7171c600
+ label "COMP\nHERE"
+ note_font_size 42
+ selected true
+ xpos -90
+ ypos 5529
+ bdwidth 312
+ bdheight 306
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode19
+ tile_color 0x7171c600
+ label "PLATE\nHERE"
+ note_font_size 42
+ selected true
+ xpos 361
+ ypos 5526
+ bdwidth 312
+ bdheight 306
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode20
+ tile_color 0xaaaaaa00
+ label "1) This will show all the differences between your plate and comp\nAdjust the gain in the difference node to effect the sensitvitiy.\n\nThis is great for checking that you're only adjusting areas that should be changed."
+ note_font_size 32
+ selected true
+ xpos -1110
+ ypos 5873
+ bdwidth 1014
+ bdheight 398
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode21
+ tile_color 0xaaaaaa00
+ label "2) Check Black levels, \nIf something feels to dark it may \nneed to be brought up using a toe node\n"
+ note_font_size 32
+ selected true
+ xpos -1126
+ ypos 6386
+ bdwidth 1077
+ bdheight 222
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode22
+ tile_color 0xaaaaaa00
+ label "6) Check Nan Values\n\nThese will be highlighted in Red\n\n\n"
+ note_font_size 32
+ selected true
+ xpos -1245
+ ypos 8260
+ bdwidth 1163
+ bdheight 292
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode23
+ tile_color 0xaaaaaa00
+ label "5) Check Negative Values/Super High Values\n\nCheck you are not creating negative values \nor super high values\n"
+ note_font_size 32
+ selected true
+ xpos -1252
+ ypos 7903
+ bdwidth 1190
+ bdheight 328
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode24
+ tile_color 0xaaaaaa00
+ label "8)  EDITIRORIAL CHECK\nIs your frame range correct\nIs your format correct\n"
+ note_font_size 32
+ selected true
+ xpos -1189
+ ypos 9875
+ bdwidth 950
+ bdheight 240
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode25
+ tile_color 0xaaaaaa00
+ label "7)  Grain Check\n\nIf the checkerboard shows your may need to tweak your grain. \nIf the value has considerably changed then you will get grain differences, due to how grain reacts to different values."
+ note_font_size 32
+ selected true
+ xpos -1246
+ ypos 8693
+ bdwidth 2188
+ bdheight 841
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode26
+ tile_color 0xaaaaaa00
+ label "3) Check high values\n\nDo all your values feel correct? \n\n-EXAMPLE-\nAre your reflections brighter than the sky?\nAre your muzzle flashes darker than the floor?\n\nDo all your values feel correct? \n\n-EXAMPLE-\nAre your reflections brighter than the sky?\nAre your muzzle flashes darker than the floor?\n\nIf so you may need to use the bring up the gain using a \ngrade node to adjust your white values\n"
+ note_font_size 32
+ selected true
+ xpos -1335
+ ypos 6700
+ bdwidth 1325
+ bdheight 464
+}
+push $cut_paste_input
+Dot {
+ name Dot128
+ selected true
+ xpos 64
+ ypos 5765
+}
+Dot {
+ name Dot129
+ selected true
+ xpos 64
+ ypos 6040
+}
+set Necf46000 [stack 0]
+Dot {
+ name Dot130
+ selected true
+ xpos 64
+ ypos 6478
+}
+set Necf47800 [stack 0]
+EXPTool {
+ red 0.46
+ green 0.46
+ blue 0.46
+ name Exposure2
+ selected true
+ xpos -365
+ ypos 6475
+}
+Dot {
+ name Dot143
+ selected true
+ xpos -331
+ ypos 6511
+}
+set Ned514400 [stack 0]
+Dot {
+ name Dot144
+ selected true
+ xpos -441
+ ypos 6511
+}
+Shuffle {
+ green red
+ blue red
+ alpha black
+ name Shuffle17
+ label R
+ selected true
+ xpos -475
+ ypos 6542
+}
+push $Ned514400
+Dot {
+ name Dot145
+ selected true
+ xpos -221
+ ypos 6511
+}
+Shuffle {
+ red blue
+ green blue
+ alpha black
+ name Shuffle4
+ label B
+ selected true
+ xpos -255
+ ypos 6543
+}
+push $Necf47800
+Dot {
+ name Dot131
+ selected true
+ xpos 64
+ ypos 6840
+}
+set Nf0072000 [stack 0]
+EXPTool {
+ red -0.9
+ green -0.9
+ blue -0.9
+ name Exposure1
+ selected true
+ xpos -372
+ ypos 6837
+}
+Dot {
+ name Dot146
+ selected true
+ xpos -338
+ ypos 6881
+}
+set Nf0073800 [stack 0]
+Dot {
+ name Dot148
+ selected true
+ xpos -228
+ ypos 6881
+}
+Shuffle {
+ red blue
+ green blue
+ alpha black
+ name Shuffle25
+ label B
+ selected true
+ xpos -262
+ ypos 6913
+}
+push $Ned514400
+Shuffle {
+ red green
+ blue green
+ alpha black
+ name Shuffle16
+ label G
+ selected true
+ xpos -365
+ ypos 6543
+}
+push $Nf0073800
+Shuffle {
+ red green
+ blue green
+ alpha black
+ name Shuffle24
+ label G
+ selected true
+ xpos -372
+ ypos 6916
+}
+push $Nf0073800
+Dot {
+ name Dot147
+ selected true
+ xpos -448
+ ypos 6881
+}
+Shuffle {
+ green red
+ blue red
+ alpha black
+ name Shuffle23
+ label R
+ selected true
+ xpos -482
+ ypos 6899
+}
+CheckerBoard2 {
+ inputs 0
+ boxsize 78
+ centerlinewidth 0
+ name CheckerBoard1
+ selected true
+ xpos -1095
+ ypos 9180
+}
+Shuffle {
+ alpha red
+ name Shuffle18
+ selected true
+ xpos -1095
+ ypos 9252
+}
+Grade {
+ channels alpha
+ blackpoint {0.1000000015 0.1000000015 0.1000000015 0.200000003}
+ whitepoint {0.5 0.5 0.5 0.5}
+ name Grade62
+ selected true
+ xpos -1095
+ ypos 9276
+}
+Clamp {
+ name Clamp2
+ selected true
+ xpos -1095
+ ypos 9310
+}
+Dot {
+ name Dot78
+ selected true
+ xpos -1061
+ ypos 9337
+}
+push 0
+Dot {
+ name Dot124
+ selected true
+ xpos 557
+ ypos 5773
+}
+Dot {
+ name Dot125
+ selected true
+ xpos 557
+ ypos 6140
+}
+set Neb4afc00 [stack 0]
+Dot {
+ name Dot25
+ selected true
+ xpos 557
+ ypos 7973
+}
+Dot {
+ name Dot126
+ selected true
+ xpos 557
+ ypos 9127
+}
+Dot {
+ name Dot127
+ label PLATE_INPUT
+ note_font "DejaVu Sans Bold Italic"
+ note_font_size 50
+ selected true
+ xpos -568
+ ypos 9127
+}
+set Nf0547400 [stack 0]
+Blur {
+ channels rgba
+ size {{parent.Blur50.size}}
+ name Blur49
+ selected true
+ xpos -684
+ ypos 9157
+}
+push $Nf0547400
+Merge2 {
+ inputs 2
+ operation difference
+ name Merge36
+ selected true
+ xpos -602
+ ypos 9261
+}
+Dot {
+ name Dot26
+ selected true
+ xpos -568
+ ypos 9335
+}
+push $Nf0072000
+Dot {
+ name Dot132
+ selected true
+ xpos 64
+ ypos 7573
+}
+set Nf036ec00 [stack 0]
+Dot {
+ name Dot133
+ selected true
+ xpos 64
+ ypos 8057
+}
+set Nf47d0400 [stack 0]
+Dot {
+ name Dot134
+ selected true
+ xpos 64
+ ypos 8340
+}
+set Ned0d8400 [stack 0]
+Dot {
+ name Dot27
+ selected true
+ xpos 64
+ ypos 8481
+}
+set Ned0d9000 [stack 0]
+Dot {
+ name Dot135
+ selected true
+ xpos 64
+ ypos 8889
+}
+Dot {
+ name Dot136
+ selected true
+ xpos -885
+ ypos 8889
+}
+Dot {
+ name Dot137
+ label COMP_INPUT
+ note_font "DejaVu Sans Bold Italic"
+ note_font_size 50
+ selected true
+ xpos -885
+ ypos 8970
+}
+set Neb0eac00 [stack 0]
+Blur {
+ channels rgba
+ size 2.1
+ name Blur50
+ selected true
+ xpos -809
+ ypos 9157
+}
+push $Neb0eac00
+Merge2 {
+ inputs 2
+ operation difference
+ name Merge37
+ selected true
+ xpos -919
+ ypos 9157
+}
+Keymix {
+ inputs 3
+ name Keymix12
+ selected true
+ xpos -919
+ ypos 9327
+}
+EXPTool {
+ red 0.85
+ green 0.85
+ blue 0.85
+ name Exposure4
+ selected true
+ xpos -919
+ ypos 9361
+}
+Dot {
+ name Dot138
+ label "CHECK YOUR GRAIN BY VIEWING HERE"
+ note_font "DejaVu Sans Bold Italic"
+ note_font_size 50
+ selected true
+ xpos -885
+ ypos 9434
+}
+Dot {
+ name Dot139
+ selected true
+ xpos -885
+ ypos 9466
+}
+set Nec93f400 [stack 0]
+Dot {
+ name Dot141
+ selected true
+ xpos -775
+ ypos 9466
+}
+Shuffle {
+ red blue
+ green blue
+ alpha black
+ name Shuffle5
+ label B
+ selected true
+ xpos -809
+ ypos 9500
+}
+push $Nec93f400
+Shuffle {
+ red green
+ blue green
+ alpha black
+ name Shuffle22
+ label G
+ selected true
+ xpos -919
+ ypos 9507
+}
+push $Nec93f400
+Dot {
+ name Dot140
+ selected true
+ xpos -995
+ ypos 9466
+}
+Shuffle {
+ green red
+ blue red
+ alpha black
+ name Shuffle19
+ label R
+ selected true
+ xpos -1029
+ ypos 9498
+}
+push $Necf46000
+Dot {
+ name Dot142
+ selected true
+ xpos -346
+ ypos 6040
+}
+Dot {
+ name Dot39
+ selected true
+ xpos -346
+ ypos 6074
+}
+set Ne9906800 [stack 0]
+Dot {
+ name Dot49
+ selected true
+ xpos -223
+ ypos 6074
+}
+push $Neb4afc00
+Difference {
+ inputs 2
+ gain 100
+ name Difference7
+ selected true
+ xpos -257
+ ypos 6132
+}
+Dot {
+ name Dot50
+ selected true
+ xpos -223
+ ypos 6202
+}
+Constant {
+ inputs 0
+ channels rgb
+ color {1 0 0 0}
+ color_panelDropped true
+ name Constant1
+ selected true
+ xpos -537
+ ypos 6175
+}
+push $Ne9906800
+Keymix {
+ inputs 3
+ name Keymix4
+ selected true
+ xpos -380
+ ypos 6192
+}
+Crop {
+ box {0 0 1920 1080}
+ name Crop3
+ selected true
+ xpos -380
+ ypos 6251
+}
+push $Ned0d8400
+Dot {
+ name Dot33
+ selected true
+ xpos -577
+ ypos 8340
+}
+Expression {
+ expr0 isnan(r)
+ expr1 isnan(g)
+ expr2 isnan(b)
+ name Expression4
+ selected true
+ xpos -611
+ ypos 8372
+}
+Expression {
+ expr0 clamp(r+g+b)
+ expr1 clamp(r+g+b)
+ expr2 clamp(r+g+b)
+ expr3 clamp(r+g+b)
+ name Expression5
+ selected true
+ xpos -611
+ ypos 8406
+}
+Constant {
+ inputs 0
+ channels rgb
+ color {1 0 0 0}
+ color_panelDropped true
+ name Constant2
+ selected true
+ xpos -748
+ ypos 8454
+}
+push $Ned0d9000
+Keymix {
+ inputs 3
+ name Keymix3
+ selected true
+ xpos -611
+ ypos 8473
+}
+push $Nf47d0400
+Dot {
+ name Dot16
+ selected true
+ xpos -647
+ ypos 8057
+}
+set Nf47d1000 [stack 0]
+Dot {
+ name Dot17
+ selected true
+ xpos -745
+ ypos 8057
+}
+Expression {
+ expr0 r>55?1:0
+ expr1 g>55?1:0
+ expr2 b>55?1:0
+ expr3 a>55?1:0
+ name Expression2
+ selected true
+ xpos -779
+ ypos 8101
+}
+Dot {
+ name Dot18
+ selected true
+ xpos -745
+ ypos 8146
+}
+push $Nf47d1000
+Expression {
+ expr0 r<0?1:0
+ expr1 g<0?1:0
+ expr2 b<0?1:0
+ expr3 a>0.01?1:0
+ name Expression1
+ selected true
+ xpos -681
+ ypos 8098
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Merge12
+ selected true
+ xpos -681
+ ypos 8142
+}
+push $Nf036ec00
+Saturation {
+ saturation 9
+ name Saturation2
+ selected true
+ xpos -255
+ ypos 7569
+}
